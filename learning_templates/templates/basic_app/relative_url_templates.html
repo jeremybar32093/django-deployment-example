@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+    <a href="{% url 'basic_app:other' %}">Other</a>
+    <!-- Reference to pages not typically within an application -> i.e. index.html or admin page -->
+    <!-- Admin page -> note need to make migration for the below to work -->
+    <a href="{% url 'admin:index' %}">Admin page</a>
+    <!-- Index page -->
+    <a href="{% url 'index' %}">Index page</a>
+  </body>
+</html>
